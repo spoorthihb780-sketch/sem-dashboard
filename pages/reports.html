@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Enterprise Dashboard reports page"
+    >
+    <title>Reports | Enterprise Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo">
+                Enterprise Dashboard
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="navigation-list">
+                    <li>
+                        <a href="../index.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html" aria-current="page">
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="page-layout">
+
+        <aside class="sidebar" aria-label="Reports sidebar">
+
+            <h2>Reports Menu</h2>
+
+            <nav aria-label="Reports navigation">
+                <ul>
+                    <li>
+                        <a href="#summary">Summary</a>
+                    </li>
+                    <li>
+                        <a href="#report-table">Reports</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+
+        <main id="main-content">
+
+            <section id="summary" aria-labelledby="reports-title">
+
+                <h1 id="reports-title">
+                    Reports
+                </h1>
+
+                <p>
+                    Review business reports and performance information.
+                </p>
+
+            </section>
+
+
+            <section id="report-table" aria-labelledby="report-table-title">
+
+                <h2 id="report-table-title">
+                    Available Reports
+                </h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <caption>
+                            Available enterprise reports
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Report Name</th>
+                                <th scope="col">Created Date</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Monthly User Report</td>
+                                <td>01 September 2026</td>
+                                <td>Administration</td>
+                                <td>Completed</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sales Performance</td>
+                                <td>05 September 2026</td>
+                                <td>Sales</td>
+                                <td>Completed</td>
+                            </tr>
+
+                            <tr>
+                                <td>Employee Activity</td>
+                                <td>10 September 2026</td>
+                                <td>Human Resources</td>
+                                <td>Processing</td>
+                            </tr>
+
+                            <tr>
+                                <td>System Audit</td>
+                                <td>15 September 2026</td>
+                                <td>IT</td>
+                                <td>Pending</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <section aria-labelledby="report-request-title">
+
+                <h2 id="report-request-title">
+                    Request a Report
+                </h2>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>
+                            Report request details
+                        </legend>
+
+                        <div class="form-group">
+
+                            <label for="report-type">
+                                Report Type
+                            </label>
+
+                            <select
+                                id="report-type"
+                                name="report-type"
+                                required
+                            >
+                                <option value="">
+                                    Select report type
+                                </option>
+
+                                <option value="users">
+                                    User Report
+                                </option>
+
+                                <option value="sales">
+                                    Sales Report
+                                </option>
+
+                                <option value="activity">
+                                    Activity Report
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="report-date">
+                                Required Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="report-date"
+                                name="report-date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button type="submit">
+                            Request Report
+                        </button>
+
+                    </fieldset>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Enterprise Dashboard.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

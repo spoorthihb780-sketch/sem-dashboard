@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Enterprise Dashboard user management page"
+    >
+    <title>Users | Enterprise Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo">
+                Enterprise Dashboard
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="navigation-list">
+                    <li>
+                        <a href="../index.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html" aria-current="page">
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="page-layout">
+
+        <aside class="sidebar" aria-label="User management sidebar">
+
+            <h2>User Menu</h2>
+
+            <nav aria-label="User page navigation">
+                <ul>
+                    <li>
+                        <a href="#user-list">User List</a>
+                    </li>
+                    <li>
+                        <a href="#add-user">Add User</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+
+        <main id="main-content">
+
+            <section aria-labelledby="users-title">
+
+                <h1 id="users-title">
+                    User Management
+                </h1>
+
+                <p>
+                    View and manage registered enterprise users.
+                </p>
+
+            </section>
+
+
+            <section id="user-list" aria-labelledby="user-list-title">
+
+                <h2 id="user-list-title">
+                    User List
+                </h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <caption>
+                            Enterprise user accounts
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Ananya Sharma</td>
+                                <td>ananya@example.com</td>
+                                <td>Engineering</td>
+                                <td>Administrator</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rahul Kumar</td>
+                                <td>rahul@example.com</td>
+                                <td>Finance</td>
+                                <td>Manager</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>Priya Singh</td>
+                                <td>priya@example.com</td>
+                                <td>Marketing</td>
+                                <td>Employee</td>
+                                <td>Pending</td>
+                            </tr>
+
+                            <tr>
+                                <td>Arjun Rao</td>
+                                <td>arjun@example.com</td>
+                                <td>Operations</td>
+                                <td>Employee</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <section id="add-user" aria-labelledby="add-user-title">
+
+                <h2 id="add-user-title">
+                    Add New User
+                </h2>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>
+                            New user information
+                        </legend>
+
+                        <div class="form-group">
+
+                            <label for="user-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="user-name"
+                                name="user-name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="user-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="user-email"
+                                name="user-email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                            >
+                                <option value="">
+                                    Select department
+                                </option>
+                                <option value="engineering">
+                                    Engineering
+                                </option>
+                                <option value="finance">
+                                    Finance
+                                </option>
+                                <option value="marketing">
+                                    Marketing
+                                </option>
+                                <option value="operations">
+                                    Operations
+                                </option>
+                            </select>
+
+                        </div>
+
+                        <button type="submit">
+                            Add User
+                        </button>
+
+                    </fieldset>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Enterprise Dashboard.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
